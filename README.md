@@ -9,7 +9,7 @@ var paint-svg = require("paint-svg")
 
 var content = "<text>Hello World</text>"
 
-paint-svg("mysvg", content)
+paint-svg("mysvg", content);
 ```
 
 ## Installation
