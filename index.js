@@ -1,27 +1,13 @@
 var fs = require('fs');
 
-module.exports = function paintSvg(name, content, width, height){
-  // Create defaults
-
-  if (!width){
-    console.log("width is undefined")
-    return false;
-
-  }
-  if (!height){
-    console.log("height is undefined")
-    return false;
-  }
-
-
+module.exports = function paintSvg(name, head, content){
   // Compose Svg
-  var svg = '<svg\
-    width="'+ width +'" height="'+height+'"\
-    x="0px" y="0px">' + content + '</svg>';
-    fs.writeFile(name + '.svg', svg, (err) => {
+  var svg = '<svg '+head+'>' + content + '</svg>';
+  // Export file
+  fs.writeFile(name + '.svg', svg, (err) => {
       if (err) throw err;
       console.log('created: ' + name + ".svg");
-    });
+  });
 
 
 

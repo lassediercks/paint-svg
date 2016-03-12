@@ -4,17 +4,21 @@ Create a svg from the command line
 
 ## Example
 
-``` js
-var paint-svg = require("paint-svg")
+```js
 
-var content = "<text>Hello World</text>"
+var paintSvg = require('./index.js')
 
-paint-svg("mysvg", content);
+paintSvg(
+  "sparta",
+  "width='300' height='200'",
+  '<rect x="20" y="20" width="94.6" height="38.1"/>'
+);
+
+
 ```
 
 ## Installation
 
 `npm install paint-svg`
-
 
 ## MIT Licenced
