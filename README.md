@@ -1,6 +1,6 @@
 # paint-svg
 
-Create a svg from the command line
+Create a svg in node
 
 ## Example
 
