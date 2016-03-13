@@ -5,8 +5,7 @@ Create a svg in node
 ## Example
 
 ```js
-
-var paintSvg = require('paint-svg')
+var paintSvg = require('./index.js')
 
 var name = 'paint-svg';
 paintSvg(
@@ -19,12 +18,6 @@ paintSvg(
     </text>',
   console.log("Created " + name)
 );
-
-
-
-);
-
-
 ```
 
 ## Installation
