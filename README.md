@@ -6,12 +6,22 @@ Create a svg in node
 
 ```js
 
-var paintSvg = require('./index.js')
+var paintSvg = require('paint-svg')
 
+var name = 'paint-svg';
 paintSvg(
-  "sparta",
-  "width='300' height='200'",
-  '<rect x="20" y="20" width="94.6" height="38.1"/>'
+  name,
+  "width='200' height='200'",
+  ' <circle fill="#232021" cx="100" cy="100" r="88"/>\
+    <text transform="matrix(1 0 0 1 49.5848 89.9571)">\
+      <tspan x="0" y="0" fill="#FFFFFF" font-family="Baskerville" font-size="34">PAINT</tspan>\
+      <tspan x="0" y="40" fill="#FFFFFF" font-family="Baskerville-Bold" font-size="50">SVG</tspan>\
+    </text>',
+  console.log("Created " + name)
+);
+
+
+
 );
 
 
